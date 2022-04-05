@@ -1,0 +1,16 @@
+Il y a un package python qui vous permet de charger et télécharger votre modéle machine learning : 
+Nom de package : Joblib 
+
+Télécharger le package apres avoir l'aprrendre : 
+import joblib
+joblib.dump(nom de votre modele, "nom de fichier.joblib")
+Ici chez vous : 
+joblib.dump(pro, "modele.joblib")
+
+------------------------------------------------------------
+Importer votre modele dans un autre endroit : 
+import joblib 
+model = joblib.load('pro.joblib')
+
+Puis vous pouvez tout faire, par exemple : 
+model.make_future_dataframe(periods=90)

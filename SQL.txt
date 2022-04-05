@@ -1,0 +1,9 @@
+ALTER TABLE public.result 
+DROP COLUMN end_date;
+
+ALTER TABLE public.result 
+RENAME COLUMN start_date TO date;
+
+-------------------
+Il faut insérer au moins une ligne dans les table adverstising et product et il faut que l'id soit = 1
+parce que dans app.py lorsque il insére les lignes des prédictions il deux colonnes qui sont des clé secondaire de tables product et advertising.
